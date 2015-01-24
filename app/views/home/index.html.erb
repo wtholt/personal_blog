@@ -1,0 +1,14 @@
+<h1>Hello World</h1>
+
+<%= link_to "New Blog", new_blog_path %>
+
+<% @blogs.each do |blog| %>
+  <br>
+  <%= blog.title %>
+  <br>
+  <%= blog.date %>
+  <br>
+  <%= blog.content %>
+  <br>
+<% end %>
+<br>
